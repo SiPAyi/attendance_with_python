@@ -23,14 +23,16 @@ def uploadDetails(sheet, last_col_number):
     if sheet.cell(1, last_col_number).value != date:
         todays_col_first_row.value = date
         addDetails(sheet, last_col_number)
+        print('Successfully added ')
     elif sheet.cell(1, last_col_number).value == 'ID':
         addDetails(sheet, last_col_number)
+        print('Successfully added ')
     else:
         print('already entered today\'s attendence. do you want to overwrite them ?')    
         overwrite = input('Enter your opinion (y/n) : ')
         if overwrite == 'y':
             overWrite(sheet, last_col_number)
-            print('overwrited')
+            print('succesfully overwrited')
         else:
             print('thanks :) ')
 
