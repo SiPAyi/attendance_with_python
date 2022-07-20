@@ -5,7 +5,7 @@ def takeAttendence():
     students = getdetails.getDetails("attendence.xlsx")
     student_state = {}
 
-    for i in range(1, 73):
+    for i in range(1, 3):
         print('roll number ', i, students[i]['name'], 'present or not(y/n) : ',end=' ')
         state = input(' ')
         if state.lower() == 'y':

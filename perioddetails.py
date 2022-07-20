@@ -3,11 +3,11 @@ from time import ctime, time
 # arranging the details to get the period name 
 periods = {"sun":['holyday','holyday','holyday','holyday','holyday','holyday','holyday','holyday','holyday'],
  "mon":['mathematics','chemistry','physics lab','physics lab','lunch','english','leisure','telugu','break', 'no class'],
- "tue":['english','chemistry','physics','maths','lunch','IT-lab','IT-lab','physics tutorial','break', 'no class'],
- "wed":['chemistry lab','chemistry lab','maths','chemistry tutorial','luch','telugu','english','maths tutorial','break', 'no class'],
+ "tue":['english','chemistry','physics','maths','lunch','IT-lab','IT-lab','physics','break', 'no class'],
+ "wed":['chemistry lab','chemistry lab','maths','chemistry','luch','telugu','english','maths','break', 'no class'],
  "thu":['physics','english','maths','chemistry','lunch','physics','english','leisure','break', 'no class'],
- "fri":['IT','chemistry','maths tutorial','physics','lunch','leisure','leisure','leisure','break', 'no class'],
- "sat":['leisure','chemistry tutorial','maths','physics tutorial','lunch','IT','telugu','leisure','break', 'no class']
+ "fri":['IT','chemistry','maths','physics','lunch','leisure','leisure','leisure','break', 'no class'],
+ "sat":['leisure','chemistry','maths','physics','lunch','IT','telugu','leisure','break', 'no class']
 }
 
 day = ctime(time())[0:3].lower()
@@ -43,7 +43,7 @@ def periodNumber():
     else:
         period_number = 9
     
-    return period_number
+    return period_number-1
 
 def periodName():
     print('Can I take period details automatically or would you like to give them sir ')
