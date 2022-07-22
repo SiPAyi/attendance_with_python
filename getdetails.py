@@ -27,7 +27,7 @@ def getDetails(workbook):
 
     students_list = {}
 
-    for i in range(2, 73):
+    for i in range(2, 74):
         rollNo = students_list_sheet.cell(i, 1).value
         id = students_list_sheet.cell(i, 2).value
         name = students_list_sheet.cell(i, 3).value
